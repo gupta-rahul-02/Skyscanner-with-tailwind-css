@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sky.css" />
+    <title>SkyScanner</title>
+  </head>
+  <body>
+    <div class="md:pl-20 md: md:bg-blue-950 md:top-0">
+      <!-- nav full container -->
+
+      <!-- nav -->
+      <div class="flex gap-20 mx-3 md:space-x-[830px]">
+        <div class="h-12 w-36 shrink-0 mt-6">
+          <img class="h-[100%] w-[100%] pb-2" src="/assets/logo.svg" />
+        </div>
+        <div class="flex gap-3 mt-6 md:space-x-10">
+          <div class="h-8 w-8">
+            <img class="h-[100%] w-[100%]" src="/assets/globe.svg" />
+          </div>
+          <div class="h-8 w-8">
+            <img class="h-[100%] w-[100%]" src="/assets/profile.svg" />
+          </div>
+          <div class="h-8 w-10 mr-3">
+            <p class="text-2xl font-semibold">Login</p>
+          </div>
+          <div class="h-8 w-8">
+            <img class="h-[100%] w-[100%]" src="/assets/menu.svg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- moto -->
+      <div class="hidden md:block">
+        <p class="font-bold text-3xl sm:text-white">
+          Millions of cheap flights. One simple search.
+        </p>
+      </div>
+
+      <div class="flex gap-2 mt-4">
+        <button class="bg-white w-20 rounded-lg pl-4 pr-4">Flights</button>
+        <button class="border border-gray-400 text-white w-20 rounded-lg pl-4 pr-4 hover:border-white">Hotels</button>
+        <button class="border border-gray-400 text-white w-28 rounded-lg pl-4 pr-4 hover:border-white">Car hire</button>
+      </div>
+      <!-- to from  cards-->
+      <div class="ml-3 md:flex md:gap-2 md:ml-0 mt-3">
+        <div
+          class="flex flex-col w-60 h-20 py-2 px-3  border border-black rounded-s-2xl bg-white"
+        >
+          <label class="hidden md:block text-black">From</label>
+          <input
+            class="outline-none"
+            type="text"
+            placeholder="Country, city or airport"
+          />
+        </div>
+        <div
+          class="flex flex-col w-60 h-20 py-2 px-3  border border-black bg-white"
+        >
+          <label class="text-black">To</label>
+          <input
+            class="outline-none"
+            type="text"
+            placeholder="Country, city or airport"
+          />
+        </div>
+        <div
+          class="flex flex-col w-60 h-20 py-2 px-3  border border-black bg-white"
+        >
+          <label class="text-black">Depart</label>
+          <input class="outline-none" type="text" placeholder="Add date" />
+        </div>
+        <div
+          class="flex flex-col w-60 h-20 py-2 px-3  border border-black bg-white"
+        >
+          <label class="text-black">Return</label>
+          <input class="outline-none" type="text" placeholder="Add date" />
+        </div>
+
+        <div
+          class="flex flex-col w-60 h-20 py-2 px-3  border border-black rounded-e-2xl bg-white"
+        >
+          <label class="text-black">From</label>
+          <input
+            class="outline-none"
+            type="text"
+            placeholder="Country, city or airport"
+          />
+        </div>
+
+        <div
+          class="w-28 h-20 bg-blue-600  rounded-2xl pl-[2rem] pt-[1.5rem] ml-3 hover:bg-blue-800"
+        >
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="mt-3 pb-8">
+        <input type="checkbox" />
+        <label class="text-white">Direct flights</label>
+      </div>
+    </div>
+    <!-- category -->
+    <div class="md:pl-20">
+      <div class="bg-white flex gap-10 mt-5">
+        <div class="bg-blue-950 w-96 h-20 text-white px-8 py-6 rounded-2xl hover:bg-blue-800 hover:cursor-pointer">
+          Hotels
+        </div>
+        <div class="bg-blue-950 w-96 h-20 text-white px-8 py-6 rounded-2xl hover:bg-blue-800 hover:cursor-pointer">
+          Car Hire
+        </div>
+        <div class="bg-blue-950  w-96 h-20 text-white px-8 py-6 rounded-2xl hover:bg-blue-800 hover:cursor-pointer">
+          Explore everywhere
+        </div>
+      </div>
+
+      <div class="mt-7 relative">
+        <img
+          class="w-[1230px] h-[460px]"
+          src="https://www.bankrate.com/2023/03/21130839/GettyImages-1390415336-scaled.jpg?auto=webp&optimize=high&crop=16:9&width=912"
+        />
+        <div class="absolute bottom-0 w-80 mb-20 ml-10">
+          <p class="text-white font-bold text-5xl">
+            Hire a car for your next adventure
+          </p>
+
+          <p class="text-white font-semibold mt-4">
+            Search for cheap car rental in seconds-anywhere in the world
+          </p>
+          <button class="bg-white rounded-md px-4 py-2 mt-8 font-semibold">
+            Find a great deal
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- city /  place cards -->
+    <div class="md:pl-20 mt-10">
+      <div class="flex flex-col">
+        <!-- title -->
+        <div>
+          <p class="font-semibold text-xl">Popular right now</p>
+          <p class="font-medium">
+            Other travellers are loving these destinations. Search flights,
+            hotels, and car hire and join them on adventure.
+          </p>
+        </div>
+        <!-- city -->
+        <div class="flex flex-wrap gap-2 mt-5">
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 3.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Taipei</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 4.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Bangkok</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 5.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Seoul</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 6.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Tokyo</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 7.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Osaka</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 8.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Kaohsiung</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 9.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Singapore</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 10.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Taichung</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex w-[26rem] h-24 border bg-white rounded-2xl shadow-xl overflow-hidden"
+          >
+            <img src="/assets/asset 11.jpeg" />
+            <div class="pl-3 pt-4">
+              <h3 class="font-semibold">Shanghai</h3>
+              <ul class="flex gap-5 text-blue-500 list-disc">
+                <a class="" href="#"> <li class="list-none">Flights</li></a>
+                <a href="#">
+                  <li>Hotels</li>
+                </a>
+                <a href="#">
+                  <li>Car hire</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="md:pl-60 md: md:bg-blue-950 md:top-0 mt-3">
+        <div class=" flex gap-60 text-white">
+            <ul class="mt-8">
+                <li>Help</li>
+                <li>Privacy Settings</li>
+                <li>Log in</li>
+            </ul>
+            <ul class="mt-8">
+                <li>Cookie poilcy</li>
+                <li>Privacy policy</li>
+                <li>Terms of service</li>
+                <li>Company Details</li>
+            </ul>
+            <ul class="mt-8">
+                <li>Explore</li>
+                <li>Company</li>
+                <li>Patners</li>
+                <li>Trips</li>
+                <li>International Sites</li>
+            </ul>
+        </div>
+        <div class="pl-32 pb-7 text-white">
+            <p>Compare and book cheap flights from anywhere, to everywhere</p>
+            <p class="">&#169 Ltd 2002-2023</p>
+        </div>
+    </div>
+  </body>
+</html>
